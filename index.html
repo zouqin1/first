@@ -38,6 +38,17 @@
             border-color: #ccc;
             text-decoration: none
         }
+        .dd3{width: 1000px;}
+        .dd3 { 
+            text-align:justify; 
+            text-justify:distribute-all-lines;/*ie6-8*/
+            text-align-last:justify;/* ie9*/
+            -moz-text-align-last:justify;/*ff*/
+            -webkit-text-align-last:justify;/*chrome 20+*/}
+            @media screen and (-webkit-min-device-pixel-ratio:0){/* chrome*/
+            .dd3:after{ content:"."; display: inline-block; width:100%; overflow:hidden; height:0;
+            }
+        }
     </style>
 </head>
 <body>
@@ -46,6 +57,9 @@
         <input type="file" name="file" id="doc" multiple="multiple" onchange="javascript:setImagePreviews();" accept="image/*" />点击这里上传文件
     </a>
     <div id="dd" style=" width:990px;float: left;"></div>
+    <div class="dd3">
+        <span>你是坠ui谁都会的积水上帝黄毒蛾和技术i萨拉蝶舞频道</span>
+    </div>
 </div>
 </body>
 <script type="text/javascript">
